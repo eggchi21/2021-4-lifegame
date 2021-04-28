@@ -1,4 +1,4 @@
-var random = function(max) {
+let random = function(max) {
     return Math.floor(Math.random() * max) + 1 ;
 };
 
