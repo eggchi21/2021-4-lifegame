@@ -58,8 +58,8 @@ export class MyCanvas {
         this.ctx.strokeStyle = '#aaaaaa';
         this.ctx.lineWidth = 0.1;
         this.ctx.beginPath();
-        this.ctx.moveTo(x+0.5, 0);
-        this.ctx.lineTo(x+0.5, this.height);
+        this.ctx.moveTo(x + 0.5, 0);
+        this.ctx.lineTo(x + 0.5, this.height);
         this.ctx.closePath();
         this.ctx.stroke();
     }
@@ -69,8 +69,8 @@ export class MyCanvas {
         this.ctx.strokeStyle = '#aaa';
         this.ctx.lineWidth = 0.1;
         this.ctx.beginPath();
-        this.ctx.moveTo(0, y+0.5);
-        this.ctx.lineTo(this.width, y+0.5);
+        this.ctx.moveTo(0, y + 0.5);
+        this.ctx.lineTo(this.width, y + 0.5);
         this.ctx.closePath();
         this.ctx.stroke();
     }

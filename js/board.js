@@ -19,7 +19,7 @@ export class Board {
 
     // IndexからLocationを求める
     toLocation(index) {
-        return { x: index % (this.width),  y: Math.floor(index / (this.width)) };
+        return { x: index % (this.width), y: Math.floor(index / (this.width)) };
     };
 
     // 盤上のすべての位置(index)を列挙する
@@ -67,7 +67,7 @@ export class Board {
         y = (y < 0) ? this.height - 1 : y;
         x = (x >= this.width) ? 0 : x;
         y = (y >= this.height) ? 0 : y;
-        return this.toIndex(x,y);
+        return this.toIndex(x, y);
         // { this.ToIndex(x % (this.width + 1), y % (this.height + 1));
     };
 
@@ -75,14 +75,14 @@ export class Board {
     countAround(index) {
         var loc = this.toLocation(index);
         var arounds = [
-            { x: loc.x-1, y: loc.y-1 },
-            { x: loc.x-1, y: loc.y },
-            { x: loc.x-1, y: loc.y+1 },
-            { x: loc.x, y: loc.y-1 },
-            { x: loc.x, y: loc.y+1 },
-            { x: loc.x+1, y: loc.y-1 },
-            { x: loc.x+1, y: loc.y },
-            { x: loc.x+1, y: loc.y+1 },
+            { x: loc.x - 1, y: loc.y - 1 },
+            { x: loc.x - 1, y: loc.y },
+            { x: loc.x - 1, y: loc.y + 1 },
+            { x: loc.x, y: loc.y - 1 },
+            { x: loc.x, y: loc.y + 1 },
+            { x: loc.x + 1, y: loc.y - 1 },
+            { x: loc.x + 1, y: loc.y },
+            { x: loc.x + 1, y: loc.y + 1 },
         ];
         return arounds
             .map(loc => this.corectIndex(loc.x, loc.y))

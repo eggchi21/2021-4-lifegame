@@ -10,11 +10,11 @@ export class Program {
 
         this.dragState = 0;
 
-        canvas.onMouseDown = (x, y,shiftKey) => {
+        canvas.onMouseDown = (x, y, shiftKey) => {
             this.dragState = 1;
         };
 
-        canvas.onMouseMove = (x, y,shiftKey) =>  {
+        canvas.onMouseMove = (x, y, shiftKey) => {
             if (this.dragState >= 1) {
                 if (shiftKey)
                     board.clear(board.toIndex(x, y));
@@ -24,7 +24,7 @@ export class Program {
             }
         };
 
-        canvas.onMouseUp = (x, y,shiftKey) =>  {
+        canvas.onMouseUp = (x, y, shiftKey) => {
             if (this.dragState === 1) {
                 board.reverse(board.toIndex(x, y));
             }
