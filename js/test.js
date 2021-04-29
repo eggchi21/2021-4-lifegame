@@ -1,3 +1,3 @@
 export function test() {
-  alert('ok');
+  alert('okk');
 }
