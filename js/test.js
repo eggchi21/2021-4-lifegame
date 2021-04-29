@@ -12,7 +12,7 @@ export class Program {
     }
 
   run() {
-    alert('pyyya');
+    alert('pyiyya');
     };
 
 }
