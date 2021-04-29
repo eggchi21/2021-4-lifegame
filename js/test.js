@@ -1,13 +1,10 @@
-import { Board } from './board.js';
-import { MyCanvas } from './canvas.js';
-import { LifeWorld } from './lifeWorld.js';
 export class Program {
     constructor() {
 
     }
 
   run() {
-    alert('o');
+    alert('lo');
     };
 
 }
