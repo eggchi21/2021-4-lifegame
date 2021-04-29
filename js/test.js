@@ -9,7 +9,7 @@ export class Program {
 
 }
 
-export function test() {
+export function main() {
   alert('okkk');
   window.onload = function () {
     var program = new Program();
