@@ -73,7 +73,6 @@ export class Program {
 }
 
 export function main() {
-    alert('okii');
     window.onload = () => {
         var program = new Program(50, 35);
         program.run();
