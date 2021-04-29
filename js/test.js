@@ -10,7 +10,7 @@ export class Program {
     }
 
   run() {
-    alert('pyyyuuu');
+    alert('pu');
     };
 
 }
