@@ -3,7 +3,7 @@ var random = function(max) {
 };
 
 export class LifeWorld {
-    constructor() {
+    constructor(board, canvas) {
         this._canvas = canvas;
         this._board = board;
         alert('ko')
