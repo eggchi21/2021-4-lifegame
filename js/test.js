@@ -6,13 +6,11 @@ export class Program {
     constructor(width, height) {
       var board = new Board(width, height);
       var canvas = new MyCanvas('mycanvas', width, height);
-      // this.world = new LifeWorld(board, canvas);
-      this.world = new LifeWorld();
-
+      this.world = new LifeWorld(board, canvas);
     }
 
   run() {
-    alert('pyiyya');
+    alert('1');
     };
 
 }

@@ -4,8 +4,8 @@ var random = function(max) {
 
 export class LifeWorld {
     constructor() {
-        // this._canvas = canvas;
-        // this._board = board;
+        this._canvas = canvas;
+        this._board = board;
         alert('ko')
         // this.timer = {};
         // this.generationCountDom = document.getElementById('generationCount');
