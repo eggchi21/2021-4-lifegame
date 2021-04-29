@@ -9,13 +9,13 @@ export class Program {
     }
 
   run() {
-    alert('ooop');
+    alert('p');
     };
 
 }
 
 export function main() {
-  alert('okkk');
+  alert('ok');
   window.onload = function () {
     var program = new Program(50, 35);
     program.run();

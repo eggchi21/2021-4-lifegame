@@ -6,16 +6,16 @@ export class LifeWorld {
     constructor(board, canvas) {
         this._canvas = canvas;
         this._board = board;
-
-        this.timer = {};
-        this.generationCountDom = document.getElementById('generationCount');
-        this.generationCount = 0;
-        // 状態が変化した時の処理 Boardオブジェクトが呼び出す
-        this._board.onChange = (index, cell) => {
-            var loc = this._board.toLocation(index);
-            var color = cell.IsAlive ? '#508030' : '#FFFFFF';
-            this._canvas.drawPoint(loc.x, loc.y, color);
-        };
+        alert('ko')
+        // this.timer = {};
+        // this.generationCountDom = document.getElementById('generationCount');
+        // this.generationCount = 0;
+        // // 状態が変化した時の処理 Boardオブジェクトが呼び出す
+        // this._board.onChange = (index, cell) => {
+        //     var loc = this._board.toLocation(index);
+        //     var color = cell.IsAlive ? '#508030' : '#FFFFFF';
+        //     this._canvas.drawPoint(loc.x, loc.y, color);
+        // };
     }
     static lineCells = 50;
 
