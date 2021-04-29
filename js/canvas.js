@@ -50,7 +50,7 @@ export class MyCanvas {
     // // 点を打つ
     drawPoint(x, y, color) {
         this.ctx.fillStyle = color;
-        this.ctx.fillRect(x*this.cellsize+1, y*this.cellsize+1, this.cellsize-1, this.cellsize-1);
+        this.ctx.fillRect(x * this.cellsize + 1, y * this.cellsize + 1, this.cellsize - 1, this.cellsize - 1);
     }
 
     // 縦罫線
@@ -113,7 +113,7 @@ export class MyCanvas {
         this.drawPoint(loc.x, loc.y, color);
     }
 
-    static  toRgbaStr(r, g, b, a){
+    static toRgbaStr(r, g, b, a){
         return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
     };
 }

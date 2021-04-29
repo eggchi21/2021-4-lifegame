@@ -11,7 +11,6 @@ export class LifeWorld {
         this.surviveCountDom = document.getElementById('surviveCount');
         this.generationCountDom = document.getElementById('generationCount');
         this.generationCount = 0;
-
         // 状態が変化した時の処理 Boardオブジェクトが呼び出す
         this._board.onChange = (index, cell) => {
             var loc = this._board.toLocation(index);
@@ -19,6 +18,7 @@ export class LifeWorld {
             this._canvas.drawPoint(loc.x, loc.y, color);
         };
     }
+    static lineCells = 50;
 
     // 開始
     start() {
@@ -59,5 +59,19 @@ export class LifeWorld {
             this._board.reverse(ix);
         }
     };
+
+    // ブロックを作成
+    createBlock() {
+        let count = 6;
+        for (var i = 0; i < count; i++) {
+            for (var j = 0; j < count; j++) {
+                this._board.clear(j + LifeWorld.lineCells * i);
+            }
+        }
+        this._board.set(2 + LifeWorld.lineCells * 2);
+        this._board.set(3 + LifeWorld.lineCells * 2);
+        this._board.set(2 + LifeWorld.lineCells * 3);
+        this._board.set(3 + LifeWorld.lineCells * 3);
+    }
 }
 

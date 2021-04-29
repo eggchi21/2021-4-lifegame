@@ -38,6 +38,8 @@ export class Program {
         document.getElementById('stopButton').addEventListener('click', () => this.stop(), false);
         document.getElementById('clearButton').addEventListener('click', () => this.clear(), false);
         document.getElementById('randomButton').addEventListener('click', () => this.random(), false);
+        document.getElementById('createBlockButton').addEventListener('click', () => this.createBlock(), false);
+
     };
 
     start() {
@@ -56,6 +58,10 @@ export class Program {
     random() {
         this.world.random();
     };
+
+    createBlock() {
+        this.world.createBlock();
+    }
 }
 
 export function main() {
