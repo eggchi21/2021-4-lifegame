@@ -74,9 +74,9 @@ export class Program {
 }
 
 export function main() {
-    alert('ok');
-    window.onload = function () {
-        var program = new Program(50, 35);
-        program.run();
-    };
+    alert('okooo');
+    // window.onload = function () {
+    //     var program = new Program(50, 35);
+    //     program.run();
+    // };
 }
