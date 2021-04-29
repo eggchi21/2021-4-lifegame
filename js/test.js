@@ -6,7 +6,7 @@ export class Program {
     constructor(width, height) {
       var board = new Board(width, height);
       var canvas = new MyCanvas('mycanvas', width, height);
-      var world = new LifeWorld(board, canvas);
+      var world = new LifeWorld();
     }
 
   run() {
