@@ -10,7 +10,7 @@ export class Program {
     }
 
   run() {
-    alert('p');
+    alert('pyyy');
     };
 
 }
