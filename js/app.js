@@ -39,6 +39,9 @@ export class Program {
         document.getElementById('clearButton').addEventListener('click', () => this.clear(), false);
         document.getElementById('randomButton').addEventListener('click', () => this.random(), false);
         document.getElementById('createBlockButton').addEventListener('click', () => this.createBlock(), false);
+        document.getElementById('createBlinkerButton').addEventListener('click', () => this.createBlinker(), false);
+        document.getElementById('createGliderButton').addEventListener('click', () => this.createGlider(), false);
+
 
     };
 
@@ -61,6 +64,14 @@ export class Program {
 
     createBlock() {
         this.world.createBlock();
+    }
+
+    createBlinker() {
+        this.world.createBlinker();
+    }
+
+    createGlider() {
+        this.world.createGlider();
     }
 }
 

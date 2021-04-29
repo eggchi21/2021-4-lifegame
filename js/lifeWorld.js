@@ -73,5 +73,33 @@ export class LifeWorld {
         this._board.set(2 + LifeWorld.lineCells * 3);
         this._board.set(3 + LifeWorld.lineCells * 3);
     }
+
+    // ブリンカーを作成
+    createBlinker() {
+        let count = 6;
+        for (var i = 0; i < count; i++) {
+            for (var j = 0; j < count; j++) {
+                this._board.clear(j + LifeWorld.lineCells * i);
+            }
+        }
+        this._board.set(2 + LifeWorld.lineCells * 2);
+        this._board.set(2 + LifeWorld.lineCells * 3);
+        this._board.set(2 + LifeWorld.lineCells * 4);
+    }
+
+    // グライダーを作成
+    createGlider() {
+        let count = 6;
+        for (var i = 0; i < count; i++) {
+            for (var j = 0; j < count; j++) {
+                this._board.clear(j + LifeWorld.lineCells * i);
+            }
+        }
+        this._board.set(2 + LifeWorld.lineCells * 2);
+        this._board.set(3 + LifeWorld.lineCells * 2);
+        this._board.set(4 + LifeWorld.lineCells * 2);
+        this._board.set(2 + LifeWorld.lineCells * 3);
+        this._board.set(3 + LifeWorld.lineCells * 4);
+    }
 }
 
