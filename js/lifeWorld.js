@@ -1,4 +1,4 @@
-let random = function(max) {
+var random = function(max) {
     return Math.floor(Math.random() * max) + 1 ;
 };
 
@@ -59,7 +59,7 @@ export class LifeWorld {
 
     // ブロックを作成
     createBlock() {
-        let count = 6;
+        var count = 6;
         for (var i = 0; i < count; i++) {
             for (var j = 0; j < count; j++) {
                 this._board.clear(j + LifeWorld.lineCells * i);
@@ -73,7 +73,7 @@ export class LifeWorld {
 
     // ブリンカーを作成
     createBlinker() {
-        let count = 6;
+        var count = 6;
         for (var i = 0; i < count; i++) {
             for (var j = 0; j < count; j++) {
                 this._board.clear(j + LifeWorld.lineCells * i);
@@ -86,7 +86,7 @@ export class LifeWorld {
 
     // グライダーを作成
     createGlider() {
-        let count = 6;
+        var count = 6;
         for (var i = 0; i < count; i++) {
             for (var j = 0; j < count; j++) {
                 this._board.clear(j + LifeWorld.lineCells * i);
