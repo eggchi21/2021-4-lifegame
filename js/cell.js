@@ -1,4 +1,3 @@
-
 export class Cell {
     constructor() {
         this.IsAlive  = false;
