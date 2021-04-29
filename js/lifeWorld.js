@@ -69,7 +69,7 @@ export class LifeWorld {
         this._board.set(3 + LifeWorld.lineCells * 2);
         this._board.set(2 + LifeWorld.lineCells * 3);
         this._board.set(3 + LifeWorld.lineCells * 3);
-    }
+    };
 
     // ブリンカーを作成
     createBlinker() {
@@ -82,7 +82,7 @@ export class LifeWorld {
         this._board.set(2 + LifeWorld.lineCells * 2);
         this._board.set(2 + LifeWorld.lineCells * 3);
         this._board.set(2 + LifeWorld.lineCells * 4);
-    }
+    };
 
     // グライダーを作成
     createGlider() {
@@ -97,6 +97,6 @@ export class LifeWorld {
         this._board.set(4 + LifeWorld.lineCells * 2);
         this._board.set(2 + LifeWorld.lineCells * 3);
         this._board.set(3 + LifeWorld.lineCells * 4);
-    }
+    };
 }
 
