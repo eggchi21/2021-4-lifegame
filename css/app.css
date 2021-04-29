@@ -8,3 +8,10 @@ canvas {
         width: 600px;
     }
 }
+
+
+@media screen and (max-width: 479px) {
+    canvas {
+        width: 400px;
+    }
+}
