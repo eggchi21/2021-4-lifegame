@@ -41,8 +41,6 @@ export class Program {
         document.getElementById('createBlockButton').addEventListener('click', () => this.createBlock(), false);
         document.getElementById('createBlinkerButton').addEventListener('click', () => this.createBlinker(), false);
         document.getElementById('createGliderButton').addEventListener('click', () => this.createGlider(), false);
-
-
     };
 
     start() {
