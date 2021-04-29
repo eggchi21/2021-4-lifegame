@@ -34,14 +34,10 @@ export class Program {
     }
 
     run() {
-        document.getElementById('startButton')
-            .addEventListener('click', () => this.start(), false);
-        document.getElementById('stopButton')
-            .addEventListener('click', () => this.stop(), false);
-        document.getElementById('clearButton')
-            .addEventListener('click', () => this.clear(), false);
-        document.getElementById('randomButton')
-            .addEventListener('click', () => this.random(), false);
+        document.getElementById('startButton').addEventListener('click', () => this.start(), false);
+        document.getElementById('stopButton').addEventListener('click', () => this.stop(), false);
+        document.getElementById('clearButton').addEventListener('click', () => this.clear(), false);
+        document.getElementById('randomButton').addEventListener('click', () => this.random(), false);
     };
 
     start() {

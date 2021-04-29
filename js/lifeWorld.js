@@ -8,6 +8,9 @@ export class LifeWorld {
         this._board = board;
 
         this.timer = {};
+        this.surviveCountDom = document.getElementById('surviveCount');
+        this.generationCountDom = document.getElementById('generationCount');
+        this.generationCount = 0;
 
         // 状態が変化した時の処理 Boardオブジェクトが呼び出す
         this._board.onChange = (index, cell) => {
@@ -17,12 +20,17 @@ export class LifeWorld {
         };
     }
 
-    //  開始
+    // 開始
     start() {
         this.timer = setInterval(() => {
-            var count = this._board.survive();
-            if (count == 0)
+            this.generationCount++;
+            let surviveCount = this._board.survive();
+            this.surviveCountDom.textContent = surviveCount + "個";
+            this.generationCountDom.textContent = this.generationCount + "世代";
+            if (surviveCount == 0) {
                 this.stop();
+                this.generationCountDom.textContent = 0 + "世代";
+            }
         }, 200);
     };
 
@@ -35,6 +43,9 @@ export class LifeWorld {
     clear() {
         this._canvas.clearAll();
         this._board.clearAll();
+        this.surviveCountDom.textContent = 0 + "個";
+        this.generationCountDom.textContent = 0 + "世代";
+        this.generationCount = 0;
     };
 
     // ランダムに点を打つ
@@ -42,8 +53,8 @@ export class LifeWorld {
         this.clear();
         var count = random(200) + 100;
         for (var i = 0; i < count; i++) {
-            var x = random(this._board.width-1);
-            var y = random(this._board.height-1);
+            var x = random(this._board.width - 1);
+            var y = random(this._board.height - 1);
             var ix = this._board.toIndex(x, y);
             this._board.reverse(ix);
         }
