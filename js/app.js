@@ -62,15 +62,15 @@ export class Program {
 
     createBlock() {
         this.world.createBlock();
-    }
+    };
 
     createBlinker() {
         this.world.createBlinker();
-    }
+    };
 
     createGlider() {
         this.world.createGlider();
-    }
+    };
 }
 
 export function main() {
