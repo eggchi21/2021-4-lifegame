@@ -1,6 +1,6 @@
 import { Board } from './board.js';
 import { MyCanvas } from './canvas.js';
-import { LifeWorld } from './lifeWorld.js';
+import { LifeWorld } from './world.js';
 export class Program {
     constructor(width, height) {
         var board = new Board(width, height);
