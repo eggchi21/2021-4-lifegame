@@ -1,16 +1,16 @@
 import { Board } from './board.js';
 import { MyCanvas } from './canvas.js';
-import { LifeWorld } from './world.js';
+// import { LifeWorld } from './world.js';
 
 export class Program {
     constructor(width, height) {
       var board = new Board(width, height);
       var canvas = new MyCanvas('mycanvas', width, height);
-      var world = new LifeWorld();
+      // this.world = new LifeWorld(board, canvas);
     }
 
   run() {
-    alert('pu');
+    alert('pyyya');
     };
 
 }
