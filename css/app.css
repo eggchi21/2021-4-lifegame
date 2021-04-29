@@ -2,3 +2,9 @@ canvas {
     border: solid 1px #666666;
     margin: 11px;
 }
+
+@media screen and (max-width: 767px) {
+    canvas {
+        width: 600px;
+    }
+}
